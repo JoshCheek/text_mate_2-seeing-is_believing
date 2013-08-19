@@ -10,7 +10,7 @@
 # set result length because TextMate has difficulty displaying long lines
 default_options=""
 default_options="$default_options -Ku"
-default_options="$default_options --result-length 200"
+default_options="$default_options --result-length 1000"
 default_options="$default_options --alignment-strategy chunk"
 default_options="$default_options --timeout 12"
 default_options="$default_options --shebang $TM_RUBY"
