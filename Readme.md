@@ -43,6 +43,11 @@ There are also some snippets you can use to play around with SiB in a more inter
 * `s_sinatra` tab    - Experiment with Sinatra
 * `s_reflection` tab - Common examples of reflection
 
+Thanks
+======
+
+To Infiniknight on [irc](irc://irc.freenode.net/textmate) for customizing the menu layout and giving me feedback on the integration.
+
 License
 =======
 

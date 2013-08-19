@@ -2,15 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>contactEmailRot13</key>
-	<string>wbfu.purrx@tznvy.pbz</string>
-	<key>contactName</key>
-	<string>Josh Cheek</string>
-	<key>description</key>
-	<string>Integration for Seeing Is Believing (https://rubygems.org/gems/seeing_is_believing)</string>
-	<key>name</key>
-	<string>Seeing Is Believing</string>
-	<key>uuid</key>
-	<string>303009A6-0531-4BF3-AD0D-7AC7B53AFBE6</string>
+    <key>contactEmailRot13</key>
+    <string>wbfu.purrx@tznvy.pbz</string>
+    <key>contactName</key>
+    <string>Josh Cheek</string>
+    <key>description</key>
+    <string>Integration for Seeing Is Believing (https://rubygems.org/gems/seeing_is_believing)</string>
+    <key>mainMenu</key>
+    <dict>
+        <key>items</key>
+        <array>
+            <string>4CDAE152-4684-4992-9A75-901AA1287BA9</string>
+            <string>D4AC8D81-085A-46BD-8E19-FC6F9AC58743</string>
+            <string>47B688B5-969B-4157-A2A4-31E380D23E11</string>
+            <string>------------------------------------</string>
+            <string>E9587C3D-ABA8-4939-8767-8B945EC4A7D0</string>
+            <string>B78A0FD8-64C7-462C-9AB4-9CBBE449A681</string>
+            <string>76B65740-F2DE-43AF-A378-60FF6CC6D13F</string>
+            <string>54E67861-55DF-4DD4-9552-8BB58C22D14E</string>
+        </array>
+    </dict>
+    <key>name</key>
+    <string>Seeing Is Believing</string>
+    <key>uuid</key>
+    <string>303009A6-0531-4BF3-AD0D-7AC7B53AFBE6</string>
 </dict>
 </plist>
