@@ -39,9 +39,10 @@ There are three commands you can use
 There are also some snippets you can use to play around with SiB in a more interesting environment.
 
 * `s_arb` tab        - In memory ActiveRecord environment
-* `s_nokogiri` tab   - Experiment with Nokogiri
-* `s_sinatra` tab    - Experiment with Sinatra
-* `s_reflection` tab - Common examples of reflection
+* `s_nokogiri` tab   - Practice parsing html/xml/css selectors/xpath in Ruby
+* `s_sinatra` tab    - Play with Sinatra, without needing to host it on a server
+* `s_reflection` tab - Examples of reflection in Ruby (knowing these makes SiB much more useful)
+
 
 Thanks
 ======
