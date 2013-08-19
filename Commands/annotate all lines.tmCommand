@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# set result length because TextMate has difficulty displaying long lines
+default_options=""
+default_options="$default_options -Ku"
+default_options="$default_options --result-length 200"
+default_options="$default_options --alignment-strategy chunk"
+default_options="$default_options --timeout 12"
+default_options="$default_options --shebang $TM_RUBY"
+
+if [ -n "$TM_FILEPATH" ]; then
+  default_options="$default_options --as $TM_FILEPATH"
+fi
+
+"${TM_RUBY}" -S seeing_is_believing $default_options</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@b</string>
+	<key>name</key>
+	<string>Annotate all lines</string>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>4CDAE152-4684-4992-9A75-901AA1287BA9</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>

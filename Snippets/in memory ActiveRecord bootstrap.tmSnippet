@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'active_record'
+require 'logger'
+
+ActiveRecord::Base.establish_connection adapter: 'sqlite3', database: ':memory:'
+ActiveRecord::Base.logger = Logger.new \$stdout
+ActiveSupport::LogSubscriber.colorize_logging = false
+
+ActiveRecord::Schema.define do
+  self.verbose = false
+  
+  create_table :users do |t|
+    t.string :name
+  end
+  
+  create_table :posts do |t|
+    t.string :name
+    t.integer :user_id
+  end
+end
+
+class User &lt; ActiveRecord::Base
+  has_many :posts
+end
+
+class Post &lt; ActiveRecord::Base
+  belongs_to :user
+end
+
+user = User.create! name: 'Josh'
+user.posts = [Post.new(name: 'yo ho ho'), Post.new(name: 'and a bottle of rum')]</string>
+	<key>name</key>
+	<string>In memory ActiveRecord bootstrap</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>s_arb</string>
+	<key>uuid</key>
+	<string>E9587C3D-ABA8-4939-8767-8B945EC4A7D0</string>
+</dict>
+</plist>

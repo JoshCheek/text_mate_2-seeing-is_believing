@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'nokogiri'
+
+doc = Nokogiri::HTML(&lt;&lt;-HTML)
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8"&gt;
+      &lt;title&gt;OMG&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;ul&gt;
+        &lt;li&gt;a&lt;/li&gt;
+        &lt;li&gt;b&lt;/li&gt;
+        &lt;li&gt;c&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+HTML
+
+doc.at_css('ul li:nth-child(2)')
+   .text</string>
+	<key>name</key>
+	<string>Nokogiri</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>s_nokogiri</string>
+	<key>uuid</key>
+	<string>76B65740-F2DE-43AF-A378-60FF6CC6D13F</string>
+</dict>
+</plist>
