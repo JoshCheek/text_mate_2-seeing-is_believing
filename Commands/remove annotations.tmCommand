@@ -6,7 +6,12 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-"${TM_RUBY}" -S seeing_is_believing -Ku --clean</string>
+/Users/josh/code/dotfiles/bin/sib_ruby -S seeing_is_believing -Ku --clean
+
+# 0 means success
+# 1 means displayable error (ie NoMethodError)
+# 2 means non-displayable error
+test "$?" != 2 || exit 1</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>

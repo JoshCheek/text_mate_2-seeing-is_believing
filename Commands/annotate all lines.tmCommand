@@ -11,15 +11,21 @@
 default_options=""
 default_options="$default_options -Ku"
 default_options="$default_options --result-length 1000"
+default_options="$default_options --number-of-captures 300"
 default_options="$default_options --alignment-strategy chunk"
 default_options="$default_options --timeout 12"
-default_options="$default_options --shebang $TM_RUBY"
 
 if [ -n "$TM_FILEPATH" ]; then
   default_options="$default_options --as $TM_FILEPATH"
 fi
 
-"${TM_RUBY}" -S seeing_is_believing $default_options</string>
+/Users/josh/code/dotfiles/bin/sib_ruby -S seeing_is_believing $default_options
+
+# 0 means success
+# 1 means displayable error (ie NoMethodError)
+# 2 means non-displayable error
+test "$?" != 2 || exit 1
+</string>
 	<key>input</key>
 	<string>document</string>
 	<key>inputFormat</key>
