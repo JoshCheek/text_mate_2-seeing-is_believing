@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/bash
-/Users/josh/code/dotfiles/bin/sib_ruby -S seeing_is_believing -Ku --clean
+"${TM_RUBY}" -S seeing_is_believing -Ku --clean
 
 # 0 means success
 # 1 means displayable error (ie NoMethodError)

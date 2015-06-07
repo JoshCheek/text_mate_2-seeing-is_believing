@@ -20,7 +20,7 @@ if [ -n "$TM_FILEPATH" ]; then
   default_options="$default_options --as $TM_FILEPATH"
 fi
 
-/Users/josh/code/dotfiles/bin/sib_ruby -S seeing_is_believing $default_options
+"${TM_RUBY}" -S seeing_is_believing $default_options
 
 # 0 means success
 # 1 means displayable error (ie NoMethodError)
