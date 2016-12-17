@@ -12,9 +12,9 @@ default_options=""
 default_options="$default_options --xmpfilter-style"
 default_options="$default_options -Ku"
 default_options="$default_options --result-length 1000"
-default_options="$default_options --number-of-captures 300"
+default_options="$default_options --max-line-captures 300"
 default_options="$default_options --alignment-strategy chunk"
-default_options="$default_options --timeout 12"
+default_options="$default_options --timeout-seconds 12"
 
 if [ -n "$TM_FILEPATH" ]; then
   default_options="$default_options --as $TM_FILEPATH"
