@@ -22,8 +22,8 @@ Installation
 This uses git to get the code, but really any way you get the code into this dir is fine,
 you could download and unzip it, for example.
 
-    mkdir -p ~/Library/Application\ Support/Avian/Bundles/
-    cd ~/Library/Application\ Support/Avian/Bundles/
+    mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
+    cd ~/Library/Application\ Support/TextMate/Bundles/
     git clone https://github.com/JoshCheek/text_mate_2-seeing-is_believing.git Seeing\ Is\ Believing.tmbundle
 
 Use
